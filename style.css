@@ -1,0 +1,24 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+body #container {
+  width: 1000px;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .logo {
+  margin-left: 100px;
+}
+body header nav {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+body header nav a {
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+}/*# sourceMappingURL=style.css.map */

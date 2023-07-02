@@ -1,9 +1,15 @@
 body {
   font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body #container {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
+}
+body #container p {
+  color: hsl(236, 13%, 42%);
 }
 body header {
   display: flex;
@@ -11,13 +17,10 @@ body header {
   justify-content: space-between;
   align-items: center;
 }
-body header .logo {
-  margin-left: 100px;
-}
 body header nav {
   list-style-type: none;
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 body header nav a {
   text-decoration: none;
@@ -28,15 +31,15 @@ body header nav a:hover {
 }
 body .grid-section {
   display: grid;
-  margin-left: 100px;
   margin-top: 30px;
 }
 body .grid-section .item1 {
   grid-column: 1/span 2;
   grid-row: 1;
+  width: 740px;
 }
 body .grid-section .item1 .web-desktop {
-  width: 620px;
+  width: 740px;
   height: 300px;
 }
 body .grid-section .item2 {
@@ -45,20 +48,29 @@ body .grid-section .item2 {
   background-color: hsl(240, 100%, 5%);
   color: hsl(36, 100%, 99%);
   padding: 10px;
-  width: 240px;
+  width: 310px;
+  height: 450px;
 }
 body .grid-section .item2 h2 {
   color: hsl(35, 77%, 62%);
 }
 body .grid-section .item2 h4:hover {
   color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+body .grid-section .item3 {
+  height: auto;
+  width: 300px;
+  margin-top: 10px;
 }
 body .grid-section .item3 h1 {
   font-size: 40px;
 }
 body .grid-section .item4 {
   padding: 10px;
-  width: 380px;
+  width: 360px;
+  height: auto;
+  margin-top: 10px;
 }
 body .grid-section .item4 button {
   padding: 10px;
@@ -70,7 +82,31 @@ body .grid-section .item4 button {
 body .grid-section .item4 button:hover {
   background-color: hsl(240, 100%, 5%);
   color: hsl(36, 100%, 99%);
+  cursor: pointer;
 }
 body .grid-section .item5 {
-  display: flex;
+  grid-column: 1/span 3;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  height: 130px;
+}
+body .grid-section .item5 .img1 {
+  line-height: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body .grid-section .item5 .img1 .img-part {
+  width: 120px;
+  height: 130px;
+}
+body .grid-section .item5 .img1 .img-section {
+  margin-left: -60px;
+}
+body .grid-section .item5 .img1 .num {
+  color: hsl(236, 13%, 42%);
+}
+body .grid-section .item5 .img1 .last-hover:hover {
+  color: hsl(35, 77%, 62%);
 }/*# sourceMappingURL=style.css.map */

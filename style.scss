@@ -166,28 +166,44 @@ body {
    
   }
 
-  @media screen and (max-width: 375px) {
+  @media (max-width: 375px) {
    #container{
+     display: grid;
+     grid-template-columns: 1fr;
+     
     header{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+        
+       
         nav{
             display: none;
         }
     }
-    .web-desktop{
-        display: none;
-    } 
+  
    
     .grid-section{
         margin-top: 300px;
         display: flex;
-       
+       margin-left: 15px;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
+         .item1{
+
+             .web-mobile{
+              display: block;
+              height: 300px;
+              margin-top: -250px;
+             
+        
+           } 
+           .web-desktop{
+            display: none;
+           }
+         }
+         .item2{
+            margin-top: 20px;
+         }
+       
         .item5{
             display: flex;
             flex-direction: column;

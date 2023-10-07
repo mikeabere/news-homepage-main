@@ -1,95 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <title>Frontend Mentor | News homepage</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
- 
-</head>
-<body>
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="style.css" /> <!-- link css file -->
+
+     <!-- import google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
     
-  <div id="container">
+    <div id="container" class="backdrop">  <!-- start of div container -->
+      <header> <!-- start of header -->
+        <div class="logo">
+          <img src="assets/images/logo.svg" alt="logo" />
+          <img id="menu" src="assets/images/icon-menu.svg" alt="menu icon" />
+        </div>
+        <aside id="sidebar" class="sidebar">
+          <img
+            id="close"
+            src="assets/images/icon-menu-close.svg"
+            alt="close icon"
+          />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </aside>
+        <nav>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </nav>
+      </header> <!-- end of header -->
 
-   <header>
-     <div class="logo">
-      <img src="assets/images/logo.svg" alt="logo">
-     </div>
-    <nav>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">New</a></li>
-      <li><a href="#">Popular</a></li>
-      <li><a href="#">Trending</a></li>
-      <li><a href="#">Categories</a></li>
-    </nav>
-   </header>
- 
-   <section class="grid-section">
-     <div class="item1">
-      <img class="web-desktop" src="./assets/images/image-web-3-desktop.jpg" alt="web3desktop">
-      <img class="web-mobile" src="./assets/images/image-web-3-mobile.jpg" alt="webmobile">
-     </div>
-     <div class="item2">
-       <h2>New</h2>
-       <h4>Hydrogen VS Electric Cars</h4>
-       <p>Will hydrogen-fueled cars ever catch up <br>
-        to EVs?</p>
-        <hr>
-       <h4>The Downsides of AI Artistry</h4>
-       <p>What are the possible adverse effects of <br>
-        on-demand AI image generation?</p>
-        <hr>
-       <h4>Is VC Funding Drying Up?</h4>
-       <p>Private funding by VC firms is down 50% <br>
-        YOY. We take a look at what that means.</p>
-     </div>
-     <div class="item3">
-       <h1>The Bright <br>
-        Future of <br>
-        Web 3.0?</h1>
-     </div>
-     <div class="item4">
-        <p> We dive into the next evolution of the web that<br>
-           claims to put the power of the platforms back<br>
-            into the hands of the people. But is it really<br>
-             fulfilling its promise?</p>
+      <section class="grid-section"> <!-- start of grid section -->
+        <div class="item1">
+          <img
+            class="web-desktop"
+            src="./assets/images/image-web-3-desktop.jpg"
+            alt="web3desktop"
+          />
+          <img
+            class="web-mobile"
+            src="./assets/images/image-web-3-mobile.jpg"
+            alt="webmobile"
+          />
+        </div>
+        <div class="item2">
+          <h2>New</h2>
+          <h4>Hydrogen VS Electric Cars</h4>
+          <p>
+            Will hydrogen-fueled cars ever catch up <br />
+            to EVs?
+          </p>
+          <hr />
+          <h4>The Downsides of AI Artistry</h4>
+          <p>
+            What are the possible adverse effects of <br />
+            on-demand AI image generation?
+          </p>
+          <hr />
+          <h4>Is VC Funding Drying Up?</h4>
+          <p>
+            Private funding by VC firms is down 50% <br />
+            YOY. We take a look at what that means.
+          </p>
+        </div>
+        <div class="item3">
+          <h1>
+            The Bright <br />
+            Future of <br />
+            Web 3.0?
+          </h1>
+        </div>
+        <div class="item4">
+          <p>
+            We dive into the next evolution of the web that<br />
+            claims to put the power of the platforms back<br />
+            into the hands of the people. But is it really<br />
+            fulfilling its promise?
+          </p>
           <button>Read more</button>
-     </div>
-     <div class="item5">
-       <div class="img1"> 
-        <img class="img-part" src="assets/images/image-retro-pcs.jpg" alt="retro image">
-        <div class="img-section">
-         <h2 class="num">01</h2>
-         <h3 class="last-hover">Reviving Retro PCs</h3>
-          <p>What happens when old PCs <br>
-             are given modern upgrades?</p>
+        </div>
+        <div class="item5">
+          <div class="img1">
+            <img
+              class="img-part"
+              src="assets/images/image-retro-pcs.jpg"
+              alt="retro image"
+            />
+            <div class="img-section">
+              <h2 class="num">01</h2>
+              <h3 class="last-hover">Reviving Retro PCs</h3>
+              <p>
+                What happens when old PCs <br />
+                are given modern upgrades?
+              </p>
             </div>
-       </div>
-       <div class="img1">
-        <img class="img-part" src="assets/images/image-top-laptops.jpg" alt="laptop image">
-        <div class="img-section">
-        <h2 class="num">02</h2>
-        <h3 class="last-hover">Top 10 Laptops of 2022</h3>
-         <p>Our best picks for various <br>
-          needs and budgets.</p>
+          </div>
+          <div class="img1">
+            <img
+              class="img-part"
+              src="assets/images/image-top-laptops.jpg"
+              alt="laptop image"
+            />
+            <div class="img-section">
+              <h2 class="num">02</h2>
+              <h3 class="last-hover">Top 10 Laptops of 2022</h3>
+              <p>
+                Our best picks for various <br />
+                needs and budgets.
+              </p>
+            </div>
+          </div>
+          <div class="img1">
+            <img
+              class="img-part"
+              src="assets/images/image-gaming-growth.jpg"
+              alt=""
+            />
+            <div class="img-section">
+              <h2 class="num">03</h2>
+              <h3 class="last-hover">The Growth of Gaming</h3>
+              <p>
+                How the pandemic has sparked <br />
+                fresh opportunities.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="img1">
-        <img class="img-part" src="assets/images/image-gaming-growth.jpg" alt="">
-        <div class="img-section">
-        <h2 class="num">03</h2>
-        <h3 class="last-hover">The Growth of Gaming</h3>
-         <p>How the pandemic has sparked <br>
-          fresh opportunities.</p>
-        </div>
-      </div>
-     </div>
-   </section>
-  
-  </div>
-</body>
+      </section> <!-- end of grid section -->
+       
+    </div> <!--end of div container-->
+
+    <script src="Js/script.js"></script>
+  </body>
 </html>
